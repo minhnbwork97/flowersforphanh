@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
       const randomSize = sizes[random];
       const div = document.createElement('div');
       div.style.position = 'absolute';
-      div.style.top = top +'%';
-      div.style.left = left + '%';
+      div.style.top = `calc(${top}% - ${randomSize}px)`;
+      div.style.left = `calc(${left}% - ${randomSize}px)`;
       div.style.height = randomSize +'px';
       div.style.width = randomSize +'px';
       div.classList.add('star')
